@@ -5,6 +5,19 @@ local g = vim.g
 g.mapleader = " "
 
 o.clipboard = "unnamedplus"
+if vim.env.SSH_TTY or vim.env.SSH_CONNECTION then
+  g.clipboard = {
+    name = "OSC 52",
+    copy = {
+      ["+"] = require("vim.ui.clipboard.osc52").copy("+"),
+      ["*"] = require("vim.ui.clipboard.osc52").copy("*"),
+    },
+    paste = {
+      ["+"] = require("vim.ui.clipboard.osc52").paste("+"),
+      ["*"] = require("vim.ui.clipboard.osc52").paste("*"),
+    },
+  }
+end
 o.cursorline = true
 o.cursorlineopt = "number"
 
