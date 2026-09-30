@@ -4,4 +4,4 @@ This is my final neovim configuration, simple and readable.
 
 ## TODO
 
-- [ ] remote python debug
+- [x] remote python debug
