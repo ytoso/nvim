@@ -53,3 +53,7 @@ map('n', '<Leader>ds', function()
     local widgets = require('dap.ui.widgets')
     widgets.centered_float(widgets.scopes)
 end)
+
+-- persistence
+-- load the session for the current directory
+map("n", "<leader>qs", function() require("persistence").load() end)
