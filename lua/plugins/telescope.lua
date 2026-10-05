@@ -4,5 +4,14 @@ return {
         'nvim-lua/plenary.nvim',
         -- optional but recommended
         { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
-    }
+    },
+    opts = {
+        defaults = {
+            mappings = {
+                n = {
+                    ["<C-d>"] = require("telescope.actions").delete_buffer,
+                },
+            },
+        },
+    },
 }
