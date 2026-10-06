@@ -28,6 +28,8 @@ map(
   "<cmd>Telescope find_files follow=true no_ignore=true hidden=true<CR>",
   { desc = "telescope find all files" }
 )
+map("n", "<leader>fs", "<cmd>Telescope lsp_document_symbols<CR>",
+  { desc = "Document symbols" })
 
 -- dap
 map('n', '<F5>', function() require('dap').continue() end)
