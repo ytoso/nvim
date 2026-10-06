@@ -62,3 +62,10 @@ map("n", "<leader>qs", function() require("persistence").load() end)
 
 -- terminal
 map("t", "<C-x>", "<C-\\><C-N>", { desc = "terminal escape terminal mode" })
+
+-- pi-nvim
+map("n", "<leader>ap", ":PiSend<CR>")
+map("n", "<leader>af", ":PiSendFile<CR>")
+map("v", "<leader>as", ":PiSendSelection<CR>")
+map("n", "<leader>ab", ":PiSendBuffer<CR>")
+map("n", "<leader>ai", ":PiPing<CR>")
