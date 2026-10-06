@@ -59,3 +59,6 @@ end)
 -- persistence
 -- load the session for the current directory
 map("n", "<leader>qs", function() require("persistence").load() end)
+
+-- terminal
+map("t", "<C-x>", "<C-\\><C-N>", { desc = "terminal escape terminal mode" })
