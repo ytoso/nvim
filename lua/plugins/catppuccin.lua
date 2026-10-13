@@ -7,5 +7,5 @@ return {
 		vim.cmd.colorscheme("catppuccin")
 	end,
 	name = "catppuccin",
-	priority = 1000
+	priority = 1000,
 }
