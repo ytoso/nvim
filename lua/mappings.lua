@@ -73,3 +73,6 @@ map("n", "<leader>ai", ":PiPing<CR>")
 
 -- aerial
 map("n", "<C-m>", "<cmd>AerialToggle left<CR>")
+
+-- lsp
+map("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition (LSP)" })
