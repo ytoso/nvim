@@ -70,3 +70,6 @@ map("n", "<leader>af", ":PiSendFile<CR>")
 map("v", "<leader>as", ":PiSendSelection<CR>")
 map("n", "<leader>ab", ":PiSendBuffer<CR>")
 map("n", "<leader>ai", ":PiPing<CR>")
+
+-- aerial
+map("n", "<C-m>", "<cmd>AerialToggle left<CR>")
