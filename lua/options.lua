@@ -36,3 +36,5 @@ o.relativenumber = true
 
 g.loaded_netrw       = 1
 g.loaded_netrwPlugin = 1
+
+o.winborder = "rounded"
