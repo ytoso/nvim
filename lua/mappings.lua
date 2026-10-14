@@ -30,6 +30,9 @@ map(
 	{ desc = "telescope find all files" }
 )
 map("n", "<leader>fs", "<cmd>Telescope lsp_document_symbols<CR>", { desc = "Document symbols" })
+map("n", "grr", "<cmd>Telescope lsp_references<CR>", {
+	desc = "LSP References",
+})
 
 -- dap
 map("n", "<F5>", function()

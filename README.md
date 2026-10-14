@@ -70,6 +70,7 @@ Run `nvim` and lazy.nvim will install all plugins on first launch.
 | `<C-c>` | Copy whole file |
 | `<leader>/` | Toggle comment |
 | `gd` | Go to definition (LSP) |
+| `grr` | Find references (LSP) |
 
 ### Format
 
