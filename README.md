@@ -68,6 +68,8 @@ Run `nvim` and lazy.nvim will install all plugins on first launch.
 | `<Esc>` | Clear search highlights |
 | `<C-s>` | Save file |
 | `<C-c>` | Copy whole file |
+| `<leader>y` | Copy to system clipboard (visual) |
+| `<leader>p` | Paste from system clipboard |
 | `<leader>/` | Toggle comment |
 | `gd` | Go to definition (LSP) |
 | `grr` | Find references (LSP) |
