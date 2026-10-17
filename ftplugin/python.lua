@@ -1,4 +1,3 @@
-vim.lsp.enable("pyright")
 vim.treesitter.start()
 
 local localRoot = vim.fn.getcwd()
