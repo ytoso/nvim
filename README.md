@@ -11,7 +11,7 @@ Simple, modular, and readable — every plugin lives in its own file.
 - Neovim `>= 0.12`
 - [git](https://git-scm.com/) (lazy.nvim is bootstrapped automatically)
 - [ripgrep](https://github.com/BurntSushi/ripgrep) — for Telescope live grep
-- Language servers: `pyright`, `clangd`
+- [Node.js](https://nodejs.org/) — required by Mason to install `pyright`
 - A [Nerd Font](https://www.nerdfonts.com/) for icons
 - Python debugger: a `debugpy` virtualenv at `~/.virtualenvs/debugpy/bin/python`
 
@@ -43,7 +43,7 @@ Run `nvim` and lazy.nvim will install all plugins on first launch.
 | --- | --- |
 | [catppuccin](https://github.com/catppuccin/nvim) | Colorscheme (mocha) |
 | [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) | Syntax highlighting & parsing |
-| [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) | LSP setup |
+| [mason.nvim](https://github.com/mason-org/mason.nvim) + [mason-lspconfig.nvim](https://github.com/mason-org/mason-lspconfig.nvim) | LSP server management |
 | [conform.nvim](https://github.com/stevearc/conform.nvim) | Formatting (format on save) |
 | [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) | Fuzzy finder |
 | [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua) | File explorer |
@@ -155,8 +155,13 @@ The repo is kept StyLua-clean by a GitHub Actions workflow
 
 ## LSP & Language Support
 
-- **Python** — `pyright` (LSP) and `debugpy` (DAP).
-- **C / C++ / CUDA** — `clangd` (LSP), enabled via `ftplugin/`.
+Language servers are installed and configured automatically via
+[mason.nvim](https://github.com/mason-org/mason.nvim) /
+[mason-lspconfig.nvim](https://github.com/mason-org/mason-lspconfig.nvim):
+
+- `clangd` — C / C++ / CUDA
+- `pyright` — Python (LSP) with `debugpy` (DAP)
+- `lua_ls` — Lua
 
 ## Debugging Python Remotely
 
