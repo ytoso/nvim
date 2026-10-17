@@ -2,6 +2,7 @@
 
 [![Neovim Minimum Version](https://img.shields.io/badge/Neovim-0.12-blueviolet.svg?style=flat-square&logo=Neovim&color=90E59A&logoColor=white)](https://github.com/neovim/neovim/releases/tag/stable)
 [![Check Lua Formatting](https://github.com/ytoso/nvim/actions/workflows/stylua.yml/badge.svg)](https://github.com/ytoso/nvim/actions/workflows/stylua.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A personal Neovim configuration built around [lazy.nvim](https://github.com/folke/lazy.nvim).
 Simple, modular, and readable — every plugin lives in its own file.
@@ -174,3 +175,7 @@ python -m debugpy --listen 127.0.0.1:5678 --wait-for-client your_script.py
 
 The config maps the local working directory to `/home/user/Codes/<repo-name>`
 on the remote — adjust `pathMappings` in `ftplugin/python.lua` to match your setup.
+
+## License
+
+[MIT](LICENSE) © Yutong Song
