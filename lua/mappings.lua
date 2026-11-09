@@ -7,6 +7,7 @@ map("n", "<C-h>", "<C-w>h", { desc = "switch window left" })
 map("n", "<C-l>", "<C-w>l", { desc = "switch window right" })
 map("n", "<C-j>", "<C-w>j", { desc = "switch window down" })
 map("n", "<C-k>", "<C-w>k", { desc = "switch window up" })
+map("t", "<C-h>", "<C-\\><C-N><C-w>h", { desc = "switch window left" })
 
 map("n", "<Esc>", "<cmd>noh<CR>", { desc = "general clear highlights" })
 
@@ -98,6 +99,10 @@ map("n", "<leader>ai", ":PiPing<CR>")
 
 -- aerial
 map("n", "<C-m>", "<cmd>AerialToggle left<CR>")
+
+-- diffview
+map("n", "<leader>gd", "<cmd>DiffviewOpen<CR>", { desc = "diffview open" })
+map("n", "<leader>gh", "<cmd>DiffviewFileHistory<CR>", { desc = "diffview file history" })
 
 -- lsp
 map("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition (LSP)" })
