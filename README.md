@@ -12,6 +12,7 @@ Simple, modular, and readable — every plugin lives in its own file.
 - Neovim `>= 0.12`
 - [git](https://git-scm.com/) (lazy.nvim is bootstrapped automatically)
 - [ripgrep](https://github.com/BurntSushi/ripgrep) — for Telescope live grep
+- [tree-sitter-cli](https://github.com/tree-sitter/tree-sitter/blob/master/crates/cli/README.md)
 - [Node.js](https://nodejs.org/) — required by Mason to install `pyright`
 - A [Nerd Font](https://www.nerdfonts.com/) for icons
 - Python debugger: a `debugpy` virtualenv at `~/.virtualenvs/debugpy/bin/python`
